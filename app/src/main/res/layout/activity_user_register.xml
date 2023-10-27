@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_base"
+    tools:context=".user_register">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Sudah punya akun? "
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chillify_trans" />
+
+    <TextView
+        android:id="@+id/regis_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.05"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/regis_button"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_custom"
+        android:fontFamily="sans-serif-black"
+        android:text="Daftar"
+        android:textColor="#1eb953"
+        app:backgroundTint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/regis_password"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="sans-serif-light"
+        android:hint="Passwordnya"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColor="#99FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/regis_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/regis_nama"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="sans-serif-light"
+        android:hint="Nama kamu"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="#99FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/regis_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/regis_email"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:fontFamily="sans-serif-light"
+        android:hint="Email kamu"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="#99FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/regis_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/coolvetica_rg"
+        android:letterSpacing="0.05"
+        android:text="Daftar"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Buat Akun Chillifymu"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

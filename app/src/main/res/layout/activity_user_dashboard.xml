@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_base"
+    tools:context=".user_dashboard">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chillify_trans" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Selamat Datang, "
+        android:textColor="#E6FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="195sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autoSizeMaxTextSize="24sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizePresetSizes="12sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="sans-serif-black"
+        android:text="guest"
+        android:textColor="#E6FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Lagu simpanan anda"
+        android:textColor="#E6FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <View
+        android:id="@+id/dash_music_add"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/add_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/music_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="135dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView9" />
+
+    <TextView
+        android:id="@+id/signout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Keluar"
+        android:textColor="#BFFFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+</androidx.constraintlayout.widget.ConstraintLayout>
